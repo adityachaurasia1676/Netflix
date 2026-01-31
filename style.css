@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  font-family: system-ui, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+}
+
+.screen {
+  background: #000;
+  color: white;
+  overflow: hidden;
+}
+
+nav {
+  height: 60px;
+  display: grid;
+  grid-template-columns: 150px 1fr 200px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navleft img {
+  width: 120px;
+}
+
+.mid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.mid a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navright {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.navright i {
+  cursor: pointer;
+}
+
+.real {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.real .background {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.real video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.real .content {
+  position: relative;
+  z-index: 3;
+  padding: 180px 40px 0;
+  max-width: 700px;
+  padding-top: 250px;
+}
+
+.real h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.real p {
+  font-size: 23px;
+}
+
+.pbox h2 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.button {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.but,.but1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 45px;
+  padding: 0 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.but {
+  background: white;
+  color: black;
+}
+
+.but1 {
+  background: rgba(255,255,255,0.3);
+}
+
+.but:hover{
+  transform: scale(1.2);
+}
+.but1:hover{
+  transform: scale(1.2);
+}
+.text h1 {
+  padding: 10px;
+  font-size: 30px;
+}
+
+.release {
+  padding-left: 20px;
+}
+
+.scroll {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.track {
+  display: flex;
+  gap: 15px;
+  width: max-content;
+  animation: move 40s 7s infinite alternate linear;
+}
+.tra {
+  display: flex;
+  gap: 15px;
+  width: max-content;
+}
+.box{
+  width: 270px;
+  height: 190px;
+  background: #333;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.box2{
+  width: 240px;
+  height: 150px;
+  background: #333;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.box3{
+  width: 230px;
+  height: 380px;
+  background: #333;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+
+@keyframes move {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-68%);
+    }
+}
+
+footer{
+  background-color: pink;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+}
+footer .fotleft{
+  background-color: antiquewhite;
+  width: 50%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
